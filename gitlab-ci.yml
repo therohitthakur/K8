@@ -1,0 +1,7 @@
+stages:
+  - deploy
+
+deploy_dvwa:
+  stage: deploy
+  script:
+    - kubectl apply -f dvwa-deployment.yaml -f dvwa-service.yaml
